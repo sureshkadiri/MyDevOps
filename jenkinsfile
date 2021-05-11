@@ -1,0 +1,8 @@
+node{
+    stage("build"){
+        git 'https://github.com/sureshkadiri/MyDevOps.git'
+    }
+    stage("deploy"){
+        sh 'cat mytext.txt'
+    }
+}

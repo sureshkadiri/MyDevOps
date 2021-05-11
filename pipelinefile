@@ -1,0 +1,12 @@
+node
+{
+    stage("build"){
+        echo 'welcome to my pipeline project. build part'
+        sh '''touch mytext.txt
+        echo "text is in mytext" > mytext.txt
+        cat mytext.txt'''
+    }
+    stage("deploy"){
+        echo 'welcome to my pipeline project. deploy part'
+    }
+}
